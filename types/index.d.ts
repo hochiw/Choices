@@ -886,7 +886,7 @@ export default class Choices {
    * const valueArray = example.getValue(); // returns [{ active: true, choiceId: 1, highlighted: false, id: 1, label: 'Label 1', value: 'Value 1'},  { active: true, choiceId: 2, highlighted: false, id: 2, label: 'Label 2', value: 'Value 2'}];
    * ```
    */
-  getValue(valueOnly?: boolean): string | string[];
+  getValue(valueOnly?: boolean): Choices.Item | Choices.Item[] | string | string[];
 
   /** Direct populate choices
    *
